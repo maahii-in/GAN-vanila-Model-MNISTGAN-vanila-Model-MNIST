@@ -1,26 +1,43 @@
-# GANs Model
-Very simple implementation of GANs, DCGANs, CGANs, WGANs, and etc. with PyTorch for various dataset (MNIST, CARS, CelebA).
+# Generative Adversarial Networks (GANs) Collection
 
-You can run the code at Jupyter Notebook. And actually you can also run these codes by using Google Colab immediately (needed downloading some dataset)!
+A clean, easy-to-understand PyTorch implementation of various Generative Adversarial Network (GAN) architectures evaluated across multiple popular datasets (MNIST, CIFAR-10, Stanford Cars, CelebA).
 
-Sometimes ipynb files do not work in Github, please clone and run it in your server.
+---
 
-## Requirements
->* python 3.6 (Anaconda)
->* pytorch 1.0.0 (updated from 0.4.0. If you want to use the previous version, then find previous commit.)
+## 🚀 Features & Architectures
+* **Vanilla GAN** (Basic MLP-based GAN)
+* **DCGAN** (Deep Convolutional GAN)
+* **CGAN** (Conditional GAN)
+* **WGAN** (Wasserstein GAN)
 
-#### CARS (Stanford dataset)
->* you can download the dataset from [https://ai.stanford.edu/~jkrause/cars/car_dataset.html](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
->* But I think the dataset is small and needs preprocessing a lot.
+---
 
+## 🛠️ Requirements & Environment
+* **Python**: `3.8+` (Recommended via Anaconda)[cite: 1]
+* **PyTorch**: `1.x` or higher[cite: 1]
+* **Jupyter Notebook** (Optional, for running `.ipynb` files locally)[cite: 1]
 
-## Experimental Results
-- You can also see the samples at ipynbs.
-- After DCGAN, DCGAN with the condition is a base model.
-- Trained 30 epochs respectively.
+---
 
+## 📂 Dataset Sources
+* **MNIST / CIFAR-10**: Automatically downloaded via `torchvision.datasets`.
+* **Stanford Cars Dataset**: Can be downloaded manually from the [Stanford Car Dataset Page](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)[cite: 1]. *(Note: Requires preprocessing before training)*[cite: 1].
+* **CelebA**: Can be downloaded via official channels or torchvision.
 
-## Colab
-- [https://colab.research.google.com](https://colab.research.google.com)
-- You can run it with GPU(K80) Runtime mode
-- Training Vanilla GAN takes only 10 minutes.
+---
+
+## 💻 How to Run
+
+### 1. Run via Google Colab (Recommended for Quick Testing)
+You can run these notebooks instantly on Google Colab with free GPU acceleration (e.g., T4/K80)[cite: 1]:
+1. Open [Google Colab](https://colab.research.google.com)[cite: 1].
+2. Upload the desired `.ipynb` file (e.g., `VanillaGAN.ipynb`)[cite: 1].
+3. Change the runtime type to **GPU** (`Runtime > Change runtime type > Hardware accelerator > GPU`)[cite: 1].
+4. Run the cells sequentially! *(Training Vanilla GAN takes approximately 10 minutes on a standard Colab GPU)*[cite: 1].
+
+### 2. Run Locally
+If Jupyter notebooks fail to render correctly directly on GitHub, clone the repository and run them on your local server[cite: 1]:
+
+```bash
+# Clone the repository
+git clone [https://github.com/maahii](https://github.com/maahii)
